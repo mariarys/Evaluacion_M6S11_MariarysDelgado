@@ -9,15 +9,12 @@
               <li class="nav-item">
                   <a class="nav-link text-primary fs-4" aria-current="page" href="{% url 'index' %}">Inicio</a>
               </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-primary fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Libros
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="{% url 'lista_libros' %}">Lista de Libros</a></li>
-                      <li><a class="dropdown-item" href="{% url 'ingresar_libro' %}">Agregar Libros</a></li>
-                  </ul>
-              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fs-4" href="{% url 'ingresar_libro' %}">Agregar Libros</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fs-4" href="{% url 'lista_libros' %}">Libros</a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link text-primary fs-4" href="#">Acerca de</a>
             </li>
